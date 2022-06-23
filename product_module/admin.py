@@ -32,3 +32,6 @@ class ProductAdmin(admin.ModelAdmin):
     class Meta:
         model  = Product
 admin.site.register(Product, ProductAdmin)
+
+from .models import CartItem
+admin.site.register(CartItem)
